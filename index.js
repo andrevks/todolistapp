@@ -1,5 +1,7 @@
 //database 
 const db = require('./queries');
+//path
+const path = require('path');
 //Entry point to the server
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -22,11 +24,14 @@ app.listen(port, () =>{
 });
 
 //Connect with the node-postgress to create a pool of connections
+app.use(express.static(__dirname + "/todolist"));
 
 app.get('/',(request,response)=>{
-    response.json({info: 'First TodoListApp with NodeJS, Express and Postgres API'})
+    response.sendFile(__dirname + "/todolist/" + "todoList.html");
 });
 
 app.get('/users',db.getUsers);
 app.get('/tasks',db.getTasks);
 app.post('/users',db.createUser);
+app.put('/user/:id',db.updateUser);
+app.delete('/user/:id',db.deleteUser);

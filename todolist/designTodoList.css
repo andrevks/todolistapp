@@ -1,0 +1,46 @@
+body{
+    background-image: url(images/5120x2880_pure_minimal.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#app{
+    height: 100%; 
+    width: 50%; 
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+#lists{
+    background-color: aliceblue;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 20px;
+}
+
+#items{
+    width: 70%;
+    padding: 1;
+}
+li{
+
+    margin-top: 0;
+    margin-left: 10%;
+}
+input{
+
+    background-color: aliceblue;
+    margin-left: 24.9%;
+    margin-top: 1px;
+    width: 49%;
+    height: 25px;
+    border:1px solid ;
+    border-radius: 15px;
+}
+caption{
+    margin: auto;
+}
