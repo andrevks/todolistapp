@@ -1,13 +1,4 @@
-//Creating a pool of connections with node-postgres
-const Pool = require('pg').Pool;
-const pool = new Pool({
-    user:'andrew',
-    host:'127.0.0.1',
-    database:'todolist_database',
-    password: 'password123',
-    port: 5432
-});
-
+const pool = require('./config.js');
 //GET 
 const getUsers = (request,response) =>{
     pool.query('SELECT * FROM users ORDER BY id ASC',(error,results) =>{

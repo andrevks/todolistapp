@@ -1,5 +1,5 @@
 //database 
-const db = require('./queries');
+const db = require('./applicationServices');
 //path
 const path = require('path');
 //Entry point to the server
