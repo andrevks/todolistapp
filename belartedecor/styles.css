@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: palevioletred;
+    
+    box-sizing: border-box;
+    
+}
+
+article{
+    max-width: 100em;
+    height: 200px;
+    border:1px solid black ;
+    margin-bottom: 5px;
+}
+
+footer{
+    background-color: lightseagreen;
+    height: 200px;
+    border:1px solid black ;
+}
