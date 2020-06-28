@@ -1,14 +1,133 @@
 * {
     margin: 0;
     padding: 0;
+    font-style: normal;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+  font-family: hind; src: url(./Fonts/Hind-Bold.ttf);
+}
+
+@font-face {
+    font-family: quattrocento;
+    src: url(./Fonts/quattrocento/Quattrocento-Bold.ttf);
+}
+
+@font-face {
+    font-family: barlow;
+    src: url(./Fonts/barlow/Barlow-SemiBold.ttf);
+}
+header{
+    background-color:#fff;
     box-sizing: border-box;
 }
 
-header{
-    background-color: palevioletred;
-    
-    box-sizing: border-box;
-    
+#company-name {
+    color: #EB3656;
+}
+
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.2s;
+    z-index: 1;
+    background-color: #fff;
+}
+
+.inside-navigation{
+    border: 1px solid black;
+    width: 1140px;
+    height: 84px;
+    font-family: hind;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-container {
+    border: 1px solid black;
+    width: 650px;
+    display: flex; 
+    justify-content: space-between;
+}
+   
+.menu-items {
+    border: 1px solid purple;
+    color: #646464;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    margin-right: 30px;
+}
+ul {
+   list-style-type: none;
+   color: black;
+   display: flex;
+   justify-content: space-between; 
+}
+a {
+   text-decoration: none;
+   background-color: transparent;
+}
+#phone {
+    border: 1px solid palevioletred;
+    color: #EE3C56;
+    padding: 2px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+#phone-number {
+    font-size: 15px;
+}
+
+/*First-Banner*/
+.first-container {
+    padding-top: 84px;
+    max-width: 1140px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+}
+.banner-content {
+    font-family: quattrocento;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner-contact {
+    font-family: barlow;
+}
+.strong-banner {
+    color: #EE3C56;
+}
+
+/*Header Banner*/
+.image-one {
+    /* 595105 1 */
+    position: relative;
+    max-width: 700px;
+    width: 55%;
+    height: 100%;
+    left: 50%;
+    right: 0;
+    top: 84px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/Furniture/patrick-perkins-G3qlZQXsBOE-unsplash.jpg);
 }
 
 article{
