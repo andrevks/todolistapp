@@ -4,6 +4,9 @@
     font-style: normal;
     box-sizing: border-box;
 }
+i,a,span {
+    display: inline-block;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -36,12 +39,11 @@ header{
     top: 0;
     width: 100%;
     transition: 0.2s;
-    z-index: 1;
+    z-index: 2;
     background-color: #fff;
 }
 
 .inside-navigation{
-    border: 1px solid black;
     width: 1140px;
     height: 84px;
     font-family: hind;
@@ -51,14 +53,12 @@ header{
 }
 
 .menu-container {
-    border: 1px solid black;
-    width: 650px;
+    width: 250px;
     display: flex; 
     justify-content: space-between;
 }
    
-.menu-items {
-    border: 1px solid purple;
+.menu-items-container {
     color: #646464;
     display: flex;
     justify-content: center;
@@ -67,7 +67,7 @@ header{
 .item {
     margin-right: 30px;
 }
-ul {
+.menu-items  {
    list-style-type: none;
    color: black;
    display: flex;
@@ -75,15 +75,25 @@ ul {
 }
 a {
    text-decoration: none;
+   color: #6c757d;
    background-color: transparent;
+}
+#home {
+    color: #EB3656;
 }
 #phone {
     border: 1px solid palevioletred;
-    color: #EE3C56;
-    padding: 2px 10px;
+    background-color:#EE3C56 ;
+    font-family: barlow;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 0;
+    right: 60px;
+    padding: 12px 15px;
 }
 
 #phone-number {
@@ -107,29 +117,42 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 .banner-contact {
     font-family: barlow;
+    padding-top: 10px;
 }
 .strong-banner {
     color: #EE3C56;
 }
-
+.tittle-container {
+    font-size: 25px;
+}
+.subtittle {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.subtittle,
+.banner-contact {
+    color: #EE3C56;
+}
 /*Header Banner*/
 .image-one {
     /* 595105 1 */
-    position: relative;
+    position: absolute;
     max-width: 700px;
     width: 55%;
-    height: 100%;
-    left: 50%;
-    right: 0;
+    height: 98%;
+    left:50%;
     top: 84px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./images/Furniture/patrick-perkins-G3qlZQXsBOE-unsplash.jpg);
+    background-image: url(./images/paige-cody-bOVZ_f3fbQM-unsplash.jpg);
 }
 
+
+section,
 article{
     max-width: 100em;
     height: 200px;
@@ -137,8 +160,13 @@ article{
     margin-bottom: 5px;
 }
 
+/*Sobre*/
+.container {
+    max-width: 1140px;
+    display: flex;
+}
 footer{
     background-color: lightseagreen;
-    height: 200px;
+    height: 100px;
     border:1px solid black ;
 }
